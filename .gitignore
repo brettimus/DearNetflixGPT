@@ -23,7 +23,7 @@ build/
 .DS_Store
 
 # Virtual env
-env/
+.venv/
 
 # Streamlit secrets
 .streamlit/secrets.toml

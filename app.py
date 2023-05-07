@@ -54,7 +54,6 @@ st.divider()
 if prompt:
     response = sequential_chain({ 'topic': prompt })
     pitch = response['pitch']
-    st.subheader('Here are your pitch and script!')
     image_url = generate_image(pitch)
     # st.write(image_url)
     st.markdown(f"![promotional image for {prompt}]({image_url})")
