@@ -1,5 +1,3 @@
-from dotenv import load_dotenv
-
 import streamlit as st
 from langchain import OpenAI
 from langchain.prompts import PromptTemplate
@@ -10,8 +8,6 @@ from langchain.memory import ConversationBufferMemory
 # from gradio_tools import (StableDiffusionTool, ImageCaptioningTool, StableDiffusionPromptGeneratorTool, TextToVideoTool)
 
 from generate_image import generate_image
-
-load_dotenv()
 
 # Prompt Templates
 topic_template = PromptTemplate(

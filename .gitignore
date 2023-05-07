@@ -24,3 +24,6 @@ build/
 
 # Virtual env
 env/
+
+# Streamlit secrets
+.streamlit/secrets.toml
