@@ -21,7 +21,9 @@ pip3 install watchdog
 Add secrets to `.streamlit/secrets.toml`
 
 ```sh
-echo OPENAI_API_KEY="yyy" >> .streamlit/secrets.toml
+echo OPENAI_API_KEY="xxx" >> .streamlit/secrets.toml
+echo STABILITY_API_HOST="yyy" >> .streamlit/secrets.toml
+echo STABILITY_API_KEY="zzz" >> .streamlit/secrets.toml
 ```
 
 After that, you can run the app

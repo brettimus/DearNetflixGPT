@@ -7,7 +7,8 @@ from langchain.memory import ConversationBufferMemory
 # from gradio_tools import (StableDiffusionTool, ImageCaptioningTool, StableDiffusionPromptGeneratorTool)
 # from gradio_tools import (StableDiffusionTool, ImageCaptioningTool, StableDiffusionPromptGeneratorTool, TextToVideoTool)
 
-from generate_image import generate_image
+# from dalle import generate_image
+from stable_diffusion import generate_image
 
 # Prompt Templates
 topic_template = PromptTemplate(
@@ -56,7 +57,8 @@ if prompt:
     pitch = response['pitch']
     image_url = generate_image(pitch)
     # st.write(image_url)
-    st.markdown(f"![promotional image for {prompt}]({image_url})")
+    # st.markdown(f"![promotional image for {prompt}]({image_url})")
+    st.markdown(f"<img src='{image_url}' />", unsafe_allow_html=True)
     st.write(pitch)
     st.write(response['script'])
 
